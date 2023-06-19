@@ -1,0 +1,314 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+p {
+    text-align: justify;
+}
+
+/*Header*/
+#header {
+    background-color: rgb(199, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2% 5% 2% 5%;
+    margin: 0 5% 0 5%;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.75);
+    z-index: 2;
+}
+
+#header h1 {
+    display: inline;
+}
+
+#header .fundoLink:not(:hover) {
+    float: right;
+    background-color: none;
+    transition: 0.25s;
+    padding: 1%;
+    border-radius: 15px;
+    margin-left: 1%;
+}
+
+#header .fundoLink:hover {
+    float: right;
+    transition: 0.25s;
+    background-color: rgb(228, 33, 33);
+    color: white;
+    padding: 1%;
+    border-radius: 15px;
+    margin-left: 1%;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#header .fundoLink:active {
+    background-color: rgb(119, 0, 0);
+    text-decoration: none;
+    margin-left: 1%;
+    box-shadow: none;
+}
+
+#header .fundoLink a {
+    text-decoration: none;
+}
+
+/*Header*/
+
+/*Home*/
+#centralizarTitulo {
+    display: flex;
+    justify-content: center;
+    /* Alinhamento horizontal ao centro */
+    align-items: center;
+    /* Alinhamento vertical ao centro */
+}
+
+#centralizarTitulo #fundoTitulo {
+    background-color: rgb(199, 0, 0);
+    padding: 2% 5% 2% 5%;
+    margin: 10% 5% 0 5%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.75);
+}
+
+#centralizarTextoIndex {
+    display: flex;
+    justify-content: center;
+    /* Alinhamento horizontal ao centro */
+    align-items: center;
+    /* Alinhamento vertical ao centro */
+}
+
+#centralizarTextoIndex #fundoTextoIndex {
+    background-color: rgb(199, 0, 0);
+    padding: 5%;
+    margin: 2.5% 15% 0 15%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.75);
+}
+
+/*Home FIM*/
+
+/*Historia*/
+#grupoTextoHistoria {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    margin: 5% 5% 0 5%;
+}
+
+#grupoTextoHistoria table{
+    background-color: rgb(199, 0, 0);
+    border-radius: 15px;
+    padding: 2.5%;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.75);
+    width: 80%;
+    height: 1px;
+}
+#grupoTextoHistoria iframe{
+    background-color: rgb(199, 0, 0);
+    border-radius: 15px;
+    padding: 2.5%;
+    margin-top: 5%;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.75);
+    width: 340px;
+    height: 215px;
+}
+
+#grupoTextoHistoria #mainHistoria{
+    background-color: rgb(199, 0, 0);
+    border-radius: 15px;
+    padding: 2.5%;
+    width: 85%;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.75);
+}
+#th, td{
+    padding: 1% 5% 1% 5%;
+}
+/*Historia FIM*/
+
+/*Galeria*/
+#imagens {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    margin: 5% 5% 0 5%;
+}
+#img {
+    background-color: rgb(199, 0, 0);
+    border-radius: 15px;
+    padding: 2.5%;
+    width: 412px;
+    height: 412px;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.75);
+}
+
+#img {
+    transition: opacity 0.25s ease;
+    opacity: 1;
+}
+
+#img.fade-out {
+    opacity: 0;
+}
+
+#botaoGaleria:not(:hover) {
+    background-color: rgb(199, 0, 0);
+    border-radius: 500px;
+    width: 50px;
+    height: 50px;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: none;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.75);
+    transition: 0.25s;
+}
+#botaoGaleria:hover {
+    background-color: rgb(228, 33, 33);
+    border-radius: 500px;
+    width: 50px;
+    height: 50px;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: none;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.75);
+}
+#botaoGaleria:active {
+    background-color: rgb(119, 0, 0);
+    border-radius: 500px;
+    width: 50px;
+    height: 50px;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: none;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.75);
+}
+
+/*Galeria FIM*/
+
+/*Contato*/
+
+#centralizarForm {
+    display: flex;
+    justify-content: center;
+    /* Alinhamento horizontal ao centro */
+    align-items: center;
+    /* Alinhamento vertical ao centro */
+}
+
+#centralizarForm #fundoForm {
+    background-color: rgb(199, 0, 0);
+    padding: 2% 5% 2% 5%;
+    margin: 2.5% 15% 0 15%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.75);
+}
+
+/* Estilo dos campos de entrada de texto */
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* Estilo do rótulo associado aos campos de entrada de texto */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo do botão de envio do formulário */
+input[type="submit"],
+input[type="reset"] {
+    background-color: rgb(119, 0, 0);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+/* Estilo do botão de envio do formulário quando o cursor está sobre ele */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: rgb(228, 33, 33);
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.75);
+}
+
+/*Contato FIM*/
+
+/*Rodape*/
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+h5 {
+    margin-bottom: 3%;
+    background-color: rgb(199, 0, 0);
+    padding: 0.5% 1.5% 0.5% 1.5%;
+    border-radius: 50px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.473);
+    text-align: center;
+}
+
+/*Rodape FIM*/
+
+/* Estilo da barra de rolagem em um site sobre Karl Marx */
+
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Largura da barra de rolagem */
+    background-color: #f1f1f1;
+    /* Cor de fundo da barra de rolagem */
+}
+
+/* Estilo do thumb (alça) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Cor do thumb da barra de rolagem */
+    border-radius: 5px;
+    /* Borda arredondada do thumb */
+}
+
+/* Estilo do thumb da barra de rolagem quando o cursor está sobre ele */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Cor do thumb da barra de rolagem ao passar o cursor */
+}
+
+/* Estilo da pista (trilha) da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: #ccc;
+    /* Cor de fundo da pista da barra de rolagem */
+}
