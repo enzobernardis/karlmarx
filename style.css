@@ -204,6 +204,9 @@ p {
 
 /*Contato*/
 
+input[type="textarea"]{
+    resize: none;
+}
 #centralizarForm {
     display: flex;
     justify-content: center;
