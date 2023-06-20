@@ -34,22 +34,10 @@
     
     <div id="centralizarTitulo">
         <div id="fundoTitulo">
-            <h1>Nos contate!</h1>
-        </div>
-    </div>
-
-    <div id="centralizarForm">
-        <div id="fundoForm">
-            <form action="contatofinal.html" method="get">
-                <label>Nome</label>
-                <input type="text" name="nome" id="nome">
-                <label>Email</label>
-                <input type="email" name="email" id="email">
-                <label>Mensagem</label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-                <input type="submit" value="Enviar" onclick="Validar(event)">
-                <input type="reset" value="Limpar">
-            </form>
+            <script>
+                var text1 = sessionStorage.getItem('text1'); // Obtém o valor armazenado na sessionStorage
+                document.write("<h1>Mensagem enviada, " + text1 + "!</h1>");
+            </script>
         </div>
     </div>
 

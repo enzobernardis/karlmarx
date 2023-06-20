@@ -19,7 +19,7 @@ function Trocar(vez) {
 
         img.src = imagens[proximo];
         img.classList.remove("fade-out");
-    }, 250); 
+    }, 250);
 }
 
 function Validar(event) {
@@ -27,22 +27,33 @@ function Validar(event) {
     text2 = window.document.getElementById("email").value;
     text3 = window.document.getElementById("mensagem").value;
 
-    if(text1 == ""){
+    if (text1 == "") {
         alert("Preencha seu nome");
         text1.focus();
         event.preventDefault();
         return false;
-    } 
-    else if(text2 == ""){
+    }
+    else if (text2 == "") {
         alert("Preencha seu email");
         text2.focus();
         event.preventDefault();
         return false;
     }
-    else if(text3 == ""){
+    else if (text3 == "") {
         alert("Coloque seu comentario");
         text3.focus();
         event.preventDefault();
         return false;
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var form = document.querySelector('form');
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
+        var nome = document.querySelector('#nome').value;
+        sessionStorage.setItem('text1', nome); // Armazena o valor na sessionStorage
+        window.location.href = "contatofinal.html"; // Redireciona para a página de destino
+    });
+});
