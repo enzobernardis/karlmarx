@@ -22,25 +22,25 @@ function Trocar(vez) {
     }, 250);
 }
 
-function Validar(event) {
+function Validar() {
     text1 = window.document.getElementById("nome").value;
     text2 = window.document.getElementById("email").value;
     text3 = window.document.getElementById("mensagem").value;
 
     if (text1 == "") {
         alert("Preencha seu nome");
-        text1.focus();
-        event.preventDefault();
+        form.text1.focus();
+        return false;
     }
     else if (text2 == "") {
         alert("Preencha seu email");
-        text2.focus();
-        event.preventDefault();
+        form.text2.focus();
+        return false;
     }
     else if (text3 == "") {
         alert("Coloque seu comentario");
-        text3.focus();
-        event.preventDefault();
+        form.text3.focus();
+        return false;
     }
 }
 
