@@ -31,19 +31,16 @@ function Validar(event) {
         alert("Preencha seu nome");
         text1.focus();
         event.preventDefault();
-        return false;
     }
     else if (text2 == "") {
         alert("Preencha seu email");
         text2.focus();
         event.preventDefault();
-        return false;
     }
     else if (text3 == "") {
         alert("Coloque seu comentario");
         text3.focus();
         event.preventDefault();
-        return false;
     }
 }
 
