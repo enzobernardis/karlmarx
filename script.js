@@ -6,7 +6,7 @@ const imagens = [
 ];
 
 function Trocar(vez) {
-    let img = window.document.getElementById("img");
+    let img = document.getElementById("img");
 
     img.classList.add("fade-out");
 
@@ -22,35 +22,34 @@ function Trocar(vez) {
     }, 250);
 }
 
-function Validar() {
-    text1 = window.document.getElementById("nome").value;
-    text2 = window.document.getElementById("email").value;
-    text3 = window.document.getElementById("mensagem").value;
+let text1;
+let text2;
+let text3;
 
-    if (text1 == "") {
+function Validar() {
+    text1 = document.getElementById("nome").value;
+    text2 = document.getElementById("email").value;
+    text3 = document.getElementById("mensagem").value;
+
+    if (text1.trim() === "") {
         alert("Preencha seu nome");
-        form.text1.focus();
         return false;
     }
-    else if (text2 == "") {
+    else if (text2.trim() === "") {
         alert("Preencha seu email");
-        form.text2.focus();
         return false;
     }
-    else if (text3 == "") {
-        alert("Coloque seu comentario");
-        form.text3.focus();
+    else if (text3.trim() === "") {
+        alert("Coloque seu comentário");
         return false;
     }
 }
 
-
 document.addEventListener('DOMContentLoaded', function () {
-    var form = document.querySelector('form');
-    form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Impede o envio padrão do formulário
-        var nome = document.querySelector('#nome').value;
+    let form = document.querySelector('form');
+    form.addEventListener('submit', function () {
+        let nome = document.querySelector('#nome').value;
         sessionStorage.setItem('text1', nome); // Armazena o valor na sessionStorage
-        window.location.href = "contatofinal.html"; // Redireciona para a página de destino
+        // window.location.href = "contatofinal.html"; // Redireciona para a página de destino
     });
 });
